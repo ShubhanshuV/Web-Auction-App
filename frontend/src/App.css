@@ -1,0 +1,31 @@
+/* Global styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222831; /* Dark Gray background */
+  color: #eeeeee; /* Light Gray text color */
+}
+
+/* Main App container */
+.App {
+  text-align: center;
+}
+
+/* Heading styling */
+h1, h2 {
+  color: #00adb5; /* Teal color for headings */
+}
+
+/* Link styling */
+a {
+  text-decoration: none;
+  color: #00adb5; /* Teal color for links */
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #eeeeee; /* Light Gray on hover */
+}
+
+  

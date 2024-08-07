@@ -1,0 +1,130 @@
+/* Container styling */
+.auction-item-container {
+  max-width: 100%;
+  width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #393e46; /* Medium Gray background */
+  color: #eeeeee; /* Light Gray text color */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Header styling */
+.auction-item-container h1 {
+  margin-bottom: 15px;
+  text-align: center; /* Center align the heading for better aesthetics */
+  color: #00adb5; /* Teal color for headings */
+}
+
+.auction-item-container p {
+  color: #eeeeee; /* Light Gray for text */
+}
+
+/* Bid list styling */
+.bid-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none; /* Remove bullet points */
+}
+
+/* Individual bid card styling */
+.bid-card {
+  background-color: #222831; /* Dark Gray card background */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: calc(33.333% - 20px); /* Three cards per row */
+  color: #eeeeee; /* Light Gray text color */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  text-align: center;
+}
+
+.bid-card h3 {
+  margin-bottom: 10px;
+  color: #00adb5; /* Teal color for headings */
+}
+
+.bid-card p {
+  margin: 0;
+  color: #eeeeee; /* Light Gray for paragraph text */
+}
+
+/* Form styling */
+.auction-item-container .form-group {
+  margin-bottom: 15px;
+}
+
+.auction-item-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #eeeeee; /* Light Gray for labels */
+}
+
+.auction-item-container input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #eeeeee; /* Light Gray background for inputs */
+  color: #222831; /* Dark Gray text color */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.auction-item-container input:focus {
+  outline: none;
+  border-color: #00adb5; /* Teal border on focus */
+}
+
+.auction-item-container button {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #00adb5; /* Teal button color */
+  color: #222831; /* Dark Gray text color */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auction-item-container button:hover {
+  background-color: #eeeeee; /* Light Gray on hover */
+  color: #222831; /* Dark Gray text color on hover */
+}
+
+/* Owner actions styling */
+.owner-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.owner-actions button {
+  width: calc(50% - 5px); /* Half width for two buttons in a row */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .auction-item-container {
+    width: 90%; /* Use more available width on smaller screens */
+  }
+  
+  .bid-card {
+    width: calc(50% - 20px); /* Two cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .bid-card {
+    width: 100%; /* One card per row on very small screens */
+  }
+}

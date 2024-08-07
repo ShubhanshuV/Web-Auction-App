@@ -1,0 +1,78 @@
+/* Container styling */
+.login-container {
+  max-width: 400px;
+  margin: 20px auto; /* Center the container horizontally */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #393e46; /* Medium Gray background */
+  color: #eeeeee; /* Light Gray text color */
+}
+
+/* Header styling */
+.login-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00adb5; /* Teal color for headings */
+}
+
+/* Error message styling */
+.error-message {
+  color: #ff4d4d; /* Bright red for error messages */
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #eeeeee; /* Light Gray for labels */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #eeeeee; /* Light Gray background for inputs */
+  color: #222831; /* Dark Gray text color */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #00adb5; /* Teal border on focus */
+}
+
+button {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #00adb5; /* Teal button color */
+  color: #222831; /* Dark Gray text color */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #eeeeee; /* Light Gray on hover */
+  color: #222831; /* Dark Gray text color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .login-container {
+    width: 90%; /* Adapt width for smaller screens */
+  }
+}

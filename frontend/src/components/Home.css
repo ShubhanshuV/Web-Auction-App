@@ -1,0 +1,130 @@
+/* Container styling */
+.home-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #222831; /* Dark Gray background for the entire page */
+  color: #eeeeee; /* Light Gray text color for readability */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow around the container */
+}
+
+/* Grid styling */
+.auction-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Card styling with 3D perspective */
+.auction-item {
+  perspective: 1000px; /* Enable 3D perspective */
+  width: calc(33.333% - 40px); /* Adjust the width to fit three items per row */
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #393e46; /* Medium Gray card color */
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.auction-item:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Card inner styling */
+.card {
+  position: relative;
+  width: 100%;
+  height: 250px; /* Set a fixed height for the card */
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+/* Card flip effect */
+.card:hover {
+  transform: rotateY(180deg); /* Flip the card on hover */
+}
+
+/* Front and back card faces */
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #393e46; /* Medium Gray for both front and back */
+  color: #eeeeee; /* Light Gray text color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+
+.card-front {
+  background-color: #393e46; /* Medium Gray */
+}
+
+.card-back {
+  background-color: #393e46; /* Medium Gray */
+  color: #eeeeee; /* Light Gray text color */
+  transform: rotateY(180deg); /* Start the back face rotated */
+}
+
+.card h2 {
+  margin: 0 0 10px;
+  color: #00adb5; /* Teal color for headings */
+}
+
+.card p {
+  margin: 5px 0;
+  color: #eeeeee; /* Light Gray for paragraph text */
+}
+
+/* User label styling */
+.user-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #d8e93c; /* Teal for the label background */
+  color: #222831; /* Dark Gray text color for contrast */
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.status-label {
+  position: absolute;
+  top: 10px;
+  right: 35px; /* Shifted a bit to the left to ensure full visibility */
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #fff;
+}
+
+.status-label.live {
+  background-color: #28a745; /* Green for live */
+}
+
+.status-label.ended {
+  background-color: #dc3545; /* Red for ended */
+}
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .auction-item {
+    width: calc(50% - 40px); /* Two items per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .auction-item {
+    width: calc(100% - 40px); /* One item per row */
+  }
+}

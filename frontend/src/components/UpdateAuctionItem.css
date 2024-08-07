@@ -1,0 +1,73 @@
+/* Container styling */
+.update-auction-item-container {
+    max-width: 600px; /* Set a maximum width for the container */
+    margin: 20px auto; /* Center the container horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #393e46; /* Medium Gray background */
+    color: #eeeeee; /* Light Gray text color */
+  }
+  
+  /* Header styling */
+  .update-auction-item-container h1 {
+    margin-bottom: 15px;
+    color: #00adb5; /* Teal color for headings */
+    text-align: center;
+  }
+  
+  /* Form group styling */
+  .update-auction-item-container .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .update-auction-item-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #eeeeee; /* Light Gray for labels */
+  }
+  
+  .update-auction-item-container input,
+  .update-auction-item-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #eeeeee; /* Light Gray background for inputs */
+    color: #222831; /* Dark Gray text color */
+  }
+  
+  .update-auction-item-container input:focus,
+  .update-auction-item-container textarea:focus {
+    outline: none;
+    border-color: #00adb5; /* Teal border on focus */
+  }
+  
+  .update-auction-item-container button {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #00adb5; /* Teal button color */
+    color: #222831; /* Dark Gray text color */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .update-auction-item-container button:hover {
+    background-color: #eeeeee; /* Light Gray on hover */
+    color: #222831; /* Dark Gray text color on hover */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .update-auction-item-container {
+      width: 90%; /* Adapt width for smaller screens */
+    }
+  }
+  

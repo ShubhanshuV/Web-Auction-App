@@ -1,0 +1,57 @@
+/* Container styling */
+.profile-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #222831; /* Dark Gray background */
+  color: #eeeeee; /* Light Gray text color */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Header styling */
+.profile-container h1,
+.profile-container h2 {
+  color: #00adb5; /* Teal color for headings */
+}
+
+/* Grid styling for auction items and bids */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+/* Card styling for items and bids */
+.grid-item {
+  background-color: #393e46; /* Medium Gray card color */
+  color: #eeeeee; /* Light Gray text color */
+  border-radius: 5px;
+  padding: 15px;
+  width: calc(33.333% - 40px); /* Three items per row */
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  overflow: hidden;
+  min-height: 100px;
+  flex: 1 1 calc(33.333% - 40px); /* Flex properties for better wrapping */
+}
+
+.grid-item:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .grid-item {
+    width: calc(50% - 40px); /* Two items per row */
+    flex: 1 1 calc(50% - 40px); /* Adjust flex for responsiveness */
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-item {
+    width: calc(100% - 40px); /* One item per row */
+    flex: 1 1 calc(100% - 40px); /* Adjust flex for responsiveness */
+  }
+}
